@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Mobile Banking</title>
+    <!-- Tailwind CSS and DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center flex-col">
+    <!-- Login Page -->
+    <div class>
+      <div class="display">
+        <div class="artboard artboard-demo phone-1">
+          <!-- Logo of Payoo -->
+          <section>
+            <img src="./assets/logo.png" alt="Payoo Mobile Banking Logo" />
+          </section>
+          <!-- Form -->
+          <section>
+            <label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="text-md font-semibold">Mobile Number</span>
+              </div>
+              <input
+                type="text"
+                placeholder="Enter Your Number"
+                class="input input-bordered w-full max-w-xs"
+                id="number"
+              />
+            </label>
+            <label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="text-md font-semibold">4 Digit Pin</span>
+              </div>
+              <input
+                type="text"
+                placeholder="Enter 4 Digit Pin"
+                class="input input-bordered w-full max-w-xs"
+                id="number"
+              />
+            </label>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
