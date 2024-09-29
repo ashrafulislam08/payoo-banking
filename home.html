@@ -3,9 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Payoo Banking - Dashboard</title>
+    <!-- Tailwind CSS and DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h2>Coming</h2>
+  <body class="h-screen flex items-center justify-center">
+    <div class="">
+      <div class="artboard phone-5 border bg-gray-100 rounded-md">
+        <!-- Navbar -->
+        <nav class="px-3 flex items-center justify-between">
+          <!-- Logo -->
+          <div><img src="./assets/logo.png" alt="" /></div>
+          <div>
+            <button class="btn bg-white" id="logout">
+              <img src="./assets/logout-icon.png" alt="" /> Log Out
+            </button>
+          </div>
+        </nav>
+        <!-- Welcome message and tabs -->
+        <section class="px-3">
+          <h2 class="text-md font-semibold mt-4">
+            🔥 Welcome to Payoo Banking
+          </h2>
+          <p class="text-gray-500 text-md my-4">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+
+          <!-- Tabs Section -->
+          <section class="grid grid-cols-3 gap-2">
+            <!-- Add Money -->
+            <div id="add-money" class="text-center bg-white p-4 space-y-1">
+              <img class="mx-auto" src="./assets/wallet.png" alt="" />
+              <h3 class="font-semibold text-md">Add Money</h3>
+            </div>
+            <!-- Cash Out -->
+            <div id="add-money" class="text-center bg-white p-4 space-y-1">
+              <img class="mx-auto" src="./assets/cashout.png" alt="" />
+              <h3 class="font-semibold text-md">Cashout</h3>
+            </div>
+            <!-- Transfer Money -->
+            <div id="add-money" class="text-center bg-white p-4 space-y-1">
+              <img class="mx-auto" src="./assets/transfer.png" alt="" />
+              <h3 class="font-semibold text-md">Transfer Money</h3>
+            </div>
+            <!-- Get Bonus -->
+            <div id="add-money" class="text-center bg-white p-4 space-y-1">
+              <img class="mx-auto" src="./assets/bonus.png" alt="" />
+              <h3 class="font-semibold text-md">Get Bonus</h3>
+            </div>
+            <!-- Pay Bill -->
+            <div id="add-money" class="text-center bg-white p-4 space-y-1">
+              <img class="mx-auto" src="./assets/purse.png" alt="" />
+              <h3 class="font-semibold text-md">Pay Bill</h3>
+            </div>
+            <!-- Transaction -->
+            <div id="add-money" class="text-center bg-white p-4 space-y-1">
+              <img class="mx-auto" src="./assets/transaction.png" alt="" />
+              <h3 class="font-semibold text-md">Transaction</h3>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+    <script src="./js/logout.js"></script>
   </body>
 </html>

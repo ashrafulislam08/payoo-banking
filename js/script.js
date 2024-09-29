@@ -8,6 +8,7 @@ loginButton.addEventListener("click", (event) => {
     alert("Number will be 11 digit");
   } else if (pinNumber.value.length < 4 || pinNumber.value === "") {
     alert("Pin is 4 digit number");
+  } else {
+    window.location.href = "home.html";
   }
-  window.location.href = "home.html";
 });
